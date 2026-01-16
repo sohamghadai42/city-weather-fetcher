@@ -1,6 +1,6 @@
 async function weatherlao(city){
     try{
-    let apikey = '19bb5f2cf083fafef2eefe1136e1c70e';
+    let apikey = "type your api key here';
     let raw = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`);
     if(!raw.ok){
         throw new Error("city not found or something went wrong");
